@@ -1,1 +1,1 @@
-CHINSTA_hamada
+CHINSTA

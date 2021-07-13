@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+サイドに追尾するバナー (.closeBanner)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+  .closeBanner {
+    position: fixed; /* 追従 */
+    z-index: 99999; /* 他の要素の下に隠れないように */
+    bottom: 60px; /* バナーの上下の位置 */
+    right: 0; /* バナーの左右の位置 */
+  }
+  .closeBanner .pc {
+	  width: 200px; /* バナーの横幅を指定 */
+    margin-bottom: 3rem;
+  }
+  .closeBanner.sp {
+	display: none; /* PCではスマホ用のバナーは非表示に */
+  }
+  .closeBanner a{
+	display: block;
+  }
+  .closeBanner p.close{
+	position: absolute;
+	right: 10px;
+	top:10px;
+  }
+  .closeBanner p.close a{
+	display: block;
+	width: 20px;
+	height: 25px;
+	text-align: center;
+  }
+  .closeBanner p.close a span{
+	display: block;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+  }
+  .closeBanner p.close a i{
+	font-size: 20px;
+	z-index: 888;
+	color: #222;
+  }
+  .closeBanner .mail_pc:hover {
+    opacity: 0.7;
+  }
+  .closeBanner .tel_pc:hover {
+    opacity: 0.7;
+  }
+  .closeBanner .under {
+      width: 600px;
+      height: auto;
+  }
+  .closeBanner .flex {
+    display: flex;
+  }
+
+@media screen and (max-width: 767px) { /* タブレット用のブレイクポイントを指定 */
+.closeBanner .pc {
+    display: none; /* タブレットサイズ以下でPC用のバナーを非表示に */
+}
+}
+
+@media screen and (max-width: 640px) { /* スマホ用のブレイクポイントを指定 */
+.closeBanner .sp {
+    display: inline-block; /* 消していたスマホ用のバナーを表示させる */
+    width: 100%; /* スマホの画面幅いっぱいにバナーを表示 */
+    margin-bottom: 3rem;
+}
+.closeBanner .sp img {
+  width: 100%;
+  height: auto;
+}
+.closeBanner .flex {
+    display: flex;
+}
+.closeBanner .floating-banner  {
+    top: unset; /* PCで指定していた上下の位置指定をクリア */
+    right: 0; /* 左右の隙間が空かないように */
+    bottom: 0; /* 画面の最下部にぴったりくっつくように指定 */
+}
+.sp__img {
+  display: flex;
+}
+.sp__img-mail {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+.sp__img-mail:hover {
+  opacity:0.8;
+}
+.sp__img-tel {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+.sp__img-tel:hover {
+  opacity:0.8;
+}
+}

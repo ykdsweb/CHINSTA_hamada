@@ -1,0 +1,149 @@
+@import "https://use.fontawesome.com/releases/v5.13.0/css/all.css";
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.contactBtn,
+a.contactBtn,
+button.contactBtn {
+  position: relative;
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  border-radius: 10rem;
+}
+
+.btn-wrap-pc-sp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*テスト表示用*/
+  max-width: 435px;
+  margin: 0 auto 20px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* a.btn-pc-sp {
+  line-height: 1.4;
+
+  width: 49.5%;
+  padding: 1.25rem 0;
+
+  color: #ffff;
+} */
+
+a.btn-pc-sp--contact {
+  color: #fff;
+  background: #094;
+}
+
+a.btn-pc-sp--tel {
+  color: #fff;
+  background: red;
+}
+
+.fa-position-right {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  right: 1rem;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+サイドに追尾するバナー (.closeBanner)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.closeBanner {
+    position: fixed; /* 追従 */
+    z-index: 99999; /* 他の要素の下に隠れないように */
+    bottom: 60px; /* バナーの上下の位置 */
+    right: 0; /* バナーの左右の位置 */
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-image: url(/img/chinsta_banner_02.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
+  .closeBanner .pc {
+    width: 300px; /* バナーの横幅を指定 */
+  }
+  /* .closeBanner:hover {
+    opacity: .9;
+  } */
+
+  .sp-slide {
+    width: 100%;
+    height: auto;
+  }
+  
+  .closeBanner.sp {
+    display: none; /* PCではスマホ用のバナーは非表示に */
+  }
+  
+  .closeBanner a{
+    display: block;
+  }
+  .closeBanner p.close{
+    position: absolute;
+    right: 10px;
+    top:10px;
+  }
+  .closeBanner p.close a{
+    display: block;
+    width: 20px;
+    height: 25px;
+    text-align: center;
+  }
+  .closeBanner p.close a span{
+    display: block;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .closeBanner p.close a i{
+    font-size: 20px;
+    z-index: 888;
+    color: #222;
+  }
+  @media screen and (max-width: 767px) { /* タブレット用のブレイクポイントを指定 */
+    .pc {
+        display: none; /* タブレットサイズ以下でPC用のバナーを非表示に */
+    }
+  }
+  
+  @media screen and (max-width: 640px) { /* スマホ用のブレイクポイントを指定 */
+    .sp {
+        display: inline-block; /* 消していたスマホ用のバナーを表示させる */
+        width: 100%; /* スマホの画面幅いっぱいにバナーを表示 */
+    }
+    .sp_img{
+      max-width: 640px;
+      width: 100%;
+      height: auto;
+    }
+    .floating-banner  {
+        top: unset; /* PCで指定していた上下の位置指定をクリア */
+        right: 0; /* 左右の隙間が空かないように */
+        bottom: 0; /* 画面の最下部にぴったりくっつくように指定 */
+    }
+  }
