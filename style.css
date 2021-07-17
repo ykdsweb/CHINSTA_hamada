@@ -9,7 +9,7 @@
 label {
     display: inline-block;
     max-width: 100%;
-    margin	-bottom: 0;
+    margin	: -bottom 0;
     font-weight: 100;
 }
 a{
@@ -27,6 +27,11 @@ a{
  * フォント
  *================================================*/
 
+.title_text {
+	width: 300px;
+	padding: 10px;
+	text-align: center;
+}
 .h1, .h2, .h3, h1, h2, h3 {
     margin-top: 0;
     margin-bottom: 0;
@@ -35,6 +40,17 @@ a{
 .h4, .h5, .h6, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+.top_moji {
+    font-family: 'Noto Sans JP', sans-serif;
+	margin: 10;
+	text-align: center;
+	padding:2em 0;
+	color: #762F07;
+	line-height: 1.5;
+	/*font-size: 4vmax;*/
 }
 
 body{
@@ -73,7 +89,7 @@ body{
     font-size: 14px;
 }
 .h2{
-	font-size:28px;
+	font-size:20px;
 }
 .h3{
 	font-size:24px;
@@ -120,7 +136,7 @@ body{
 		font-size:16px;
 	}
 	.h2{
-		font-size:18px;
+		font-size:16px;
 	}
 	.h3{
 		font-size:16px;
@@ -332,7 +348,7 @@ a:hover,a *:hover{
 }
 
 .border{
-	border:3px solid #212121;
+	border:3px solid #762F07;
 }
 
 .mod_heading_l {
@@ -348,10 +364,10 @@ a:hover,a *:hover{
 .arrow_box {
 	position: relative;
 	background: #ffffff;
-	border: 2px solid #212121;
+	border: 2px solid #762F07;
     padding: 10px 20px;
     max-width: 600px;
-	box-shadow: 3px 3px 0px 0px #212121;
+	box-shadow: 3px 3px 0px 0px #762F07;
 }
 @media screen and (max-width: 767px) {
 	.detail .arrow_box_top {
@@ -386,7 +402,7 @@ a:hover,a *:hover{
 }
 .arrow_box:before {
 	border-color: rgba(33, 33, 33, 0);
-	border-top-color: #212121;
+	border-top-color: #762F07;
     border-width: 29px;
     margin-left: -27px;
 }
@@ -407,7 +423,7 @@ a:hover,a *:hover{
 	height:0;
 	padding-top:75%;
 	background: #fff;
-	border: #212121 solid 1px;
+	border: #762F07 solid 1px;
 }
 .wrapper_thumb_ab{
 	position:absolute;
@@ -450,7 +466,7 @@ a:hover,a *:hover{
 
 @media screen and (max-width:768px){
 	.border{
-		border:2px solid #212121;
+		border:2px solid #762F07;
 	}
 }
 
@@ -465,7 +481,7 @@ a:hover,a *:hover{
 }
 
 .logo{
-	background-image:url(./img/logo_chinsta.png);
+	background-image:url(./img/chinstai_logo.jpg);
 	background-repeat:no-repeat;
     width: 560px;
     height: 84px;
@@ -474,7 +490,7 @@ a:hover,a *:hover{
 
 .navbar-header{
 	padding:10px 0;
-    border-bottom: #212121 solid 3px;
+    border-bottom: #762F07 solid 1px;
 }
 .navbar-brand{
 	float:none;
@@ -504,20 +520,20 @@ a:hover,a *:hover{
 	margin-bottom:20px;
 }
 #navbar{
-    border-bottom: 3px solid #212121;
-    background: #F5DEB3;
+    border-bottom: 1px solid #762F07;
+    background: #fdfdfd;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #333;
+    color: #fdfdfd;
 }
 
 
 .navbar-default .navbar-toggle {
-    border-color: #212121;
+    border-color: #762F07;
 }
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #212121
+    background-color: #762F07
 }
 .navbar-toggle{
     border: 2px solid transparent;
@@ -539,6 +555,7 @@ a:hover,a *:hover{
 }
 .header_tel {
     margin-top: 13px;
+	box-shadow: 2px 2px 4px gray;
 }
 .js_nav_fixed{
 	position:fixed;
@@ -552,7 +569,7 @@ a:hover,a *:hover{
 	width: 235px !important;
 	height: 35px !important;
 	margin-top: 0px !important;
-	background-image:url(./img/logo_chinsta_01.png);
+	/*background-image:url(./img/logo_chinsta_01.png);*/
 }
 .js_tel_fixed{
 	width: 191px !important;
@@ -633,7 +650,7 @@ a:hover,a *:hover{
 		position: absolute;
 		top: 52px;
 		width: 560px;
-		border: 3px solid #212121;
+		border: 1px solid #762F07;
 		padding-left:3px;
 	}
 	.dropdown-menu > li{
@@ -648,12 +665,12 @@ a:hover,a *:hover{
 	}
 	/*ボタントランスフォーム*/
 	.navbar-nav li.active span:nth-child(2){
-	    background: #212121;
+	    background: #762F07;
 	    color: #fff;
 	}
 	.navbar-nav li.active a:hover span:nth-child(2){
-	    background: #212121;
-		color: #212121;
+	    background: #762F07;
+		color: #762F07;
 	}
 
 	
@@ -685,8 +702,8 @@ a:hover,a *:hover{
 		pointer-events: none;
 	}
 	.button span:nth-child(1) {
-		background-color: #BC763C;
-		color: #212121;
+		background-color: #fdfdfd;
+		color: #762F07;
 		-webkit-transform: rotateX(-90deg);
 		-moz-transform: rotateX(-90deg);
 		transform: rotateX(-90deg);
@@ -695,8 +712,8 @@ a:hover,a *:hover{
 		transform-origin: 50% 50% -15px;
 	}
 	.button span:nth-child(2) {
-		background-color: #F5DEB3;
-		color: #333;
+		background-color: #fdfdfd;
+		color: #762f07;
 		-webkit-transform: rotateX(0deg);
 		-moz-transform: rotateX(0deg);
 		transform: rotateX(0deg);
@@ -741,9 +758,9 @@ a:hover,a *:hover{
 		height: auto;
 		margin-top:15px !important;
 	}
-	.logo{
+	/*.logo{
 		background-image:url(./img/logo_chinsta_01.png);
-	}
+	}*/
 	
 	
 	
@@ -759,7 +776,7 @@ a:hover,a *:hover{
 }
 @media screen and (max-width:767px){
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
-		color: #212121;
+		color: #762F07;
 	}
 }
 
@@ -777,13 +794,13 @@ footer{
 }
 .wrapper_footer {
     background: #BC763C;
-	color:#212121;
+	color:#762F07;
 	padding:30px 0;
-    border-top: 3px solid #212121;
-	border-bottom:3px solid #212121;
+    border-top: 1px solid #762F07;
+	border-bottom:1px solid #762F07;
 }
 .wrapper_footer a{
-	color:#212121;
+	color:#762F07;
 	text-decoration:underline;
 }
 .wrapper_footer a:hover {
@@ -950,16 +967,24 @@ background-image:url(img/top_search_detail.png);
 	}
 }
 .map__search-area {
-	background: #f5deb3;
+	background: #fff462;
+	box-shadow: 2px 2px 4px gray;
+}
+button:hover {
+	background:gray;
 }
 .map__search-area:hover {
-	background:#bc763c;
+	background:#fff462;
 }
 .map__search-img {
 	box-sizing: border-box;
 	max-width: 390px;
 	width: 100%;
 	height: auto;
+}
+.map__search-img:hover {
+	position : relative;
+	top : 3pt;
 }
 /* ━━━━━━━━━━━━━━━━━━━━
 	条件から探すボタン
@@ -973,16 +998,24 @@ background-image:url(img/top_search_detail.png);
 	}
 }
 .conditions__search-area {
-	background: #DEB887
+	background: #82cddd;
+	box-shadow: 2px 2px 4px gray;
 }
 .conditions__search-area:hover {
-	background:#bc763c;
+	background:#82cddd;
+	position : relative;
+	top : 3pt;
 }
 .conditions__search-img {
 	box-sizing: border-box;
 	max-width: 390px;
 	width: 100%;
 	height: auto;
+}
+
+.conditions__search-img:hover {
+	position : relative;
+	top : 3pt;
 }
 
 @media screen and (min-width: 768px){
@@ -1089,7 +1122,7 @@ background-image:url(img/top_search_detail.png);
 .student_toggle_title {
     background: #bbd94c;
     padding: 10px;
-    border: 3px solid #212121;
+    border: 1px solid #762F07;
     border-top: none;
 }
 #js_toggle_student_pare:hover{
@@ -1196,7 +1229,7 @@ background-image:url(img/top_search_detail.png);
 }
 */
 .wrapper_map span{
-    border: #212121 3px solid;
+    border: #762F07 1px solid;
     background: #fff;
     padding: 6px;
     display: block;
@@ -1204,7 +1237,7 @@ background-image:url(img/top_search_detail.png);
 }
 .wrapper_map_hover{
     border: #fff 3px solid !important;
-    background: #212121 !important;
+    background: #762F07 !important;
 	color:#fff !important ;
 	transition:0.3s;
 	text-decoration:none;
@@ -1306,7 +1339,7 @@ background-image:url(img/top_search_detail.png);
     padding: 4%;
 }
 
-/*サンプル　ポップアップボタン*/
+/*サンプル	ポップアップボタン*/
 .lightbox { display: none; }
 
 .featherlight-content{
@@ -1407,18 +1440,18 @@ background-image:url(img/top_search_detail.png);
     padding: 10px;
 	vertical-align:top;
 	margin-bottom:20px;
-    border: 3px solid #212121;
+    border: 1px solid #762F07;
 }
 li.li_top_article *:hover {
     opacity: 0.95;
 }
 
 .wrapper_article_img {
-    border: 2px solid #212121;
+    border: 1px solid #762F07;
 }
 .wrapper_article .title{
 	margin:10px;
-	color: #212121;
+	color: #762F07;
 	font-size: 16px;
 }
 .wrapper_article .pad{
@@ -1516,7 +1549,7 @@ li.li_top_article *:hover {
 	margin:0 5px;
 }
 .ul_button_search > li > a{
-    color: #212121;
+    color: #762F07;
 }
 .section_more_search{
     background: #1526bc;
@@ -1576,11 +1609,11 @@ ul.feed li{
     margin: 0 0.2%;
 }
 .ul_top_banner img{
-    border: 3px solid #212121;
+    border: 1px solid #762F07;
 }
 @media screen and (max-width:768px){
 	.ul_top_banner img{
-		border: 2px solid #212121;
+		border: 1px solid #762F07;
 	}
 	.ul_top_banner > li:nth-child(1) {
 		margin-left: 1%;
@@ -1611,8 +1644,8 @@ ul.feed li{
 .wrapper_shop_tel{
     display: block;
     padding: 8px;
-    border-bottom: dotted 2px #212121;
-    border-top: dotted 2px #212121;
+    border-bottom: dotted 1px #762F07;
+    border-top: dotted 1px #762F07;
 } 
 .wrapper_shop_img img {
     margin: 0 auto;
@@ -1620,7 +1653,7 @@ ul.feed li{
 
 .wrapper_shop_img{
     padding: 15px;
-    border-top: 3px solid #212121;
+    border-top: 1px solid #762F07;
 }
 .link_top_shop{
     background: #80beef;
@@ -1628,7 +1661,7 @@ ul.feed li{
     color: #fff;
     font-weight: bold;
     font-size: 18px;
-    border-top: 3px solid #212121;
+    border-top: 1px solid #762F07;
 	display:block;
 }
 
@@ -1659,10 +1692,10 @@ ul.feed li{
 }
 @media screen and (max-width:768px){
 	.wrapper_shop_img{
-		border-top: 2px solid #212121;
+		border-top: 1px solid #762F07;
 	}
 	.link_top_shop{
-		border-top: 2px solid #212121;
+		border-top: 1px solid #762F07;
 	}
 
 }
@@ -1708,7 +1741,7 @@ ul.feed li{
     padding-bottom:0;
 }
 .title_ichiran{
-    color: #212121;
+    color: #762F07;
 }
 
 .wrapper_title_ichiran li{
@@ -1725,22 +1758,22 @@ ul.feed li{
 	background-color:#ffffff;
 	padding:10px 5px;
     margin-right: 20px;
-	border: 2px solid #212121;
+	border: 1px solid #762F07;
 }
 .bg_new{
     background-color: #cc0000;
     padding: 10px 10px;
     color: #fff;
-    border: 2px solid #212121;
+    border: 1px solid #762F07;
 }
 
 .bg_fee{
-	border: #212121 solid 3px;
+	border: #762F07 solid 1px;
     background: #FDDEC0;
 }
 .bg_space{
     background: #BDE6FF;
-    border: 3px solid #212121;
+    border: 1px solid #762F07;
     border-left: 1px;
 }
 .bg_fee,.bg_space{
@@ -1911,11 +1944,11 @@ ul.feed li{
 	}	
 	.bg_fee{
 		/* background: #fff; */
-		border: #212121 solid 2px;
+		border: #762F07 solid 1px;
 	}
 	.bg_space{
 		/* background: #36A7EA; */
-		border: 2px solid #212121;
+		border: 2px solid #762F07;
 		border-left: 1px;
 	}
 	
@@ -2177,7 +2210,7 @@ div#gMap {
     margin-bottom: 10px;
 }
 .wrapper_shop_detail_staff_title .role{
-	background:#212121;
+	background:#762F07;
 }
 .wrapper_shop_detail_staff_title .kana{
     background: #84c6f7;
@@ -2190,7 +2223,7 @@ div#gMap {
 }
 .wrapper_shop_detail_staff_img{
 	transform: rotate(5deg);
-    background: #212121;
+    background: #762F07;
     width: 80%;
     display: inline-block;
 }
@@ -2204,7 +2237,7 @@ div#gMap {
 }
 .wrapper_shop_detail_staff_type_ab{
     padding: 5px;
-    background: #212121;
+    background: #762F07;
     top: -20px;
     left: -20px;
 }
@@ -2220,7 +2253,7 @@ div#gMap {
     padding: 7px;
 }
 .wrapper_shop_detail_staff_list hr{
-    border-bottom: dotted #212121 4px;
+    border-bottom: dotted #762F07 1px;
 }
 
 .wrapper_shop_detail_staff_list dt{
@@ -2232,7 +2265,7 @@ div#gMap {
 width: 59%;
 }
 .wrapper_shop_detail_staff_facelist_title{
-	background:#212121;
+	background:#762F07;
 	padding:10px;
 }
 .wrapper_shop_detail_staff_facelist_img > .row > div{
@@ -2254,7 +2287,7 @@ width: 59%;
 }
 .wrapper_shop_detail_shop_title {
     padding: 10px 15px 17px 15px;
-	border-bottom: 3px solid #212121;
+	border-bottom: 1px solid #762F07;
 	cursor:pointer;
 }
 .wrapper_shop_detail_shop_title:hover{
@@ -2280,7 +2313,7 @@ width: 59%;
     background-size: contain;
     background-repeat: no-repeat;
 	background-position:2%;
-    border-bottom: 3px solid #212121;
+    border-bottom: 1px solid #762F07;
 }
 .wrapper_shop_detail_map_title p{
 	margin-left:55px;
@@ -2313,7 +2346,7 @@ width: 59%;
 	margin-bottom:0;
 }
 .wrapper_shop_detail_text_list hr{
-    border-bottom: solid #212121 2px;
+    border-bottom: solid #762F07 1px;
     margin: 0px;
 }
 
@@ -2459,7 +2492,7 @@ width: 59%;
 		top: -13px;
 	}	
 	.wrapper_shop_detail_shop_title {
-			border-bottom: 2px solid #212121;
+			border-bottom: 1px solid #762F07;
 		}
 		
 	
@@ -3165,7 +3198,7 @@ a.gs-title b {
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  TELのbackgroundのCSS(header.html, footer.html)
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-.tel__img {
+/* .tel__img {
 	border-top: 4px solid #ee7800;
 	border-right: 4px solid #eb6101;
 	border-bottom: 4px solid #eb6101;
@@ -3178,7 +3211,7 @@ a.gs-title b {
 	border-right: 4px solid #ee7800;
 	border-bottom: 4px solid #ee7800;
 	border-left: 4px solid #eb6101;
-}
+} */
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
  キャンペーンバナーの余白を作るcss
