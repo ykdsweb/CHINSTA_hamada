@@ -90,11 +90,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <header id="header"></header><!--外部ファイルから読み込み-->
 <!--コンテンツここから-->
+<h2 class="top_moji">
+	<p>倉敷でのお部屋探しは<br>賃貸ステーションで！</p>
 <section class="section_top_fv">
-	<h2 class ="top_moji"><p>倉敷でのお部屋探しは<br>賃貸ステーションで！</p></h2>
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-8 col-sm-push-4 col_youtube">
+			<div class="row size">
+			<!--<div class="col-sm-8 col-sm-push-4 col_youtube"> -->
 			
             <div class="slider-pro relative slider_border" id="my-slider">
           <div class="sp-slides">
@@ -121,6 +123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </div>
           <!--<div class="absolute_border"></div>-->
+			</div>
         </div>
         <script>
 			jQuery(document).ready(function( $ ) {
@@ -136,10 +139,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				autoplay: true,
 				autoScaleLayers: false,
 				});
-	});		
+	        });		
 				</script>
 			</div>
-			<div class="col-sm-4  col-sm-pull-8  col_search_2col clearfix">
+			<!-- <div class="col-sm-4  col-sm-pull-8  col_search_2col clearfix"> -->
+			<div class="row_01">
 				<div class="wrapper_button_top over">
                 	<a href="/map.html" rel="noreferrer noopener" target="_blank">
 						<div class="map__search">
@@ -1268,8 +1272,20 @@ $(function(){
 
  
 
-
 <!--コンテンツここまで-->
 <footer id="footer"></footer><!--外部ファイルから読み込み-->
+<!--<div class="top_moji">
+    <p>倉敷でのお部屋探しは<br>賃貸ステーションで！</p>
+</div>
+    <script>
+		$(function() {	
+		setTimeout(function(){
+			$('.start p').fadeIn(1600);
+		},500); //0.5秒後にロゴをフェードイン!
+		setTimeout(function(){
+			$('.start').fadeOut(500);
+		},2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+	}); 
+</script>-->
 </body>
 </html>

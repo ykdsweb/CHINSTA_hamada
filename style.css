@@ -208,6 +208,24 @@ h1,h2,h3,h4,h5,h6,h7{
 
 .container_s{
 	max-width:980px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.row {
+	display: flex;
+}
+
+.size {
+	height: auto;
+	width:70%;/*設定したい画像の横幅のサイズ*/
+    margin:0 auto;
+	padding:0 0 48px;
+}
+
+.row_01 {
+	display: flex;
+	justify-content: space-around;
 }
 
 hr{
@@ -858,19 +876,19 @@ hr.hr_footer{
 
 /*スライドショー*/
 .wrapper_slider {
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 70%;
   overflow: hidden;
-  position:relative;
+  /*position:relative;*/
 }
 
 .set_slider {
 /*  width: 1500px;*/
-  position:absolute;
+  /*position:absolute;*/
 }
 
 .slide_slider {
-	width: 100%;
+	width: 40%;
 	height: 100%;
 	float: left;
 }
@@ -884,6 +902,11 @@ hr.hr_footer{
 	/*width:100%;*/
 }
 
+.col-sm-8 col-sm-push-4 col_youtube {
+	display:flex;
+	justify-content: center;
+}
+
 .movie-wrap_inner{
     position: relative;
     padding-bottom: 56.6%;
@@ -895,7 +918,7 @@ hr.hr_footer{
 	position:absolute;
 	top:0;
 	right:0;
-	width:100%;
+	width:70%;
 	height:100%;
 }
 .wrapper_map img{
@@ -978,7 +1001,7 @@ button:hover {
 }
 .map__search-img {
 	box-sizing: border-box;
-	max-width: 390px;
+	max-width: 500px;
 	width: 100%;
 	height: auto;
 }
@@ -1066,8 +1089,8 @@ button:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
 }
 .col_search_2col{
 	padding-right:7px;
@@ -2827,14 +2850,14 @@ a.gs-title b {
 	opacity: 0.9;
 }
 
-.slider_border {
+/*.slider_border {
 	border: 2px solid #000;
-}
+} 
 @media screen and (max-width: 767px) {
 	.slider_border {
 		border: 1px solid #000;
 	}
-}
+} */
 
 /*.absolute_border {
     border: 3px solid #000;
@@ -3276,3 +3299,24 @@ a.gs-title b {
 		display: inline-block;
 	}
 	}
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ ページを開いた時のテキスト
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 
+.top_moji {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.top_moji p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+} */
