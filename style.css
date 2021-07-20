@@ -28,7 +28,7 @@ a{
  *================================================*/
 
 .title_text {
-	width: 300px;
+	width: 100%;
 	padding: 10px;
 	text-align: center;
 }
@@ -167,6 +167,14 @@ body{
 /*==================================================
  * 共通（どのサイトでも）
  *================================================*/
+
+ .box {
+	margin       : auto;
+	width        : 400px;
+	height       : 40px;
+	background   : #ee7800;
+  }
+  
 .remove {
     text-indent: -9999px;
     white-space: nowrap;
@@ -811,7 +819,7 @@ footer{
 	margin-top:150px;
 }
 .wrapper_footer {
-    background: #BC763C;
+    background: #f0f0f0;
 	color:#762F07;
 	padding:30px 0;
     border-top: 1px solid #762F07;
@@ -997,11 +1005,12 @@ button:hover {
 	background:gray;
 }
 .map__search-area:hover {
-	background:#fff462;
+	position : relative;
+	top : 3pt;
 }
 .map__search-img {
 	box-sizing: border-box;
-	max-width: 500px;
+	max-width: 390px;
 	width: 100%;
 	height: auto;
 }
@@ -1435,9 +1444,9 @@ button:hover {
 	height:98px;
 }
 */
-.wrapper_bg_article{
+.wrapper_bg_article {
 	/*background-image:url(img/top_article_bg.png);*/
-	background: #DEB887;
+	background: #ffffff;
 	padding-top:30px;
 }
 .wrapper__bg__article--white {
@@ -1689,22 +1698,22 @@ ul.feed li{
 }
 
 .top_shop_okishin .link_top_shop{
-    background: #F6D03F;
+    background: #ee7800;
 }
 .top_shop_ekikita .link_top_shop{
-    background: #ff9ca9;
+    background: #ee7800;
 }
 .top_shop_ekimae .link_top_shop{
-    background: #9dc966;
+    background: #ee7800;
 }
 .top_shop_mizushima .link_top_shop{
-    background: #ffaa7d;
+    background: #ee7800;
 }
 .top_shop_nishiachi .link_top_shop{
-    background: #c38ae0;
+    background: #ee7800;
 }
 .top_shop_kuraekimae .link_top_shop{
-    background: #fd9340;
+    background: #ee7800;
 }
 
 
@@ -3141,7 +3150,7 @@ a.gs-title b {
     opacity: 0.9;
   }
   .under {
-	  background: #bc763c;
+	  background: #f0f0f0;
       width: 600px;
       height: auto;
   }
