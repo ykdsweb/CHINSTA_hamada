@@ -46,6 +46,7 @@ a{
 .top_moji {
     font-family: 'Noto Sans JP', sans-serif;
 	margin: 10;
+	margin-bottom: 5%;
 	text-align: center;
 	padding:0.5em ;
 	color: #762F07;
@@ -219,14 +220,23 @@ h1,h2,h3,h4,h5,h6,h7{
 
 .size {
 	height: auto;
-	width:70%;/*設定したい画像の横幅のサイズ*/
+	width:80%;/*設定したい画像の横幅のサイズ*/
     margin:0 auto;
 	padding:0 0 48px;
 }
 
+/* .row_00 {
+	height: auto;
+	width: 778px;/*設定したい画像の横幅のサイズ*/
+    /* margin: 0 auto;
+}  */ 
+	
+
 .row_01 {
 	display: flex;
 	justify-content: space-around;
+	margin-top: 4%;
+	margin-bottom: 5%;
 
 }
 
@@ -384,10 +394,10 @@ a:hover,a *:hover{
 .arrow_box {
 	position: relative;
 	background: #ffffff;
-	border: 2px solid #762F07;
+	border: 1px solid #762F07;
     padding: 10px 20px;
     max-width: 600px;
-	box-shadow: 3px 3px 0px 0px #762F07;
+	/* box-shadow: 3px 3px 0px 0px #762F07; */
 }
 @media screen and (max-width: 767px) {
 	.detail .arrow_box_top {
@@ -497,8 +507,8 @@ a:hover,a *:hover{
 
  .box {
 	margin       : auto;
-	width        : 400px;
-	height       : 40px;
+	width        : 100%;
+	height       : 10px;
 	background   : #ee7800;
 	position: relative; top: 0; 
   }
@@ -525,6 +535,10 @@ a:hover,a *:hover{
 	margin-top:-5px;
 }
 
+/* .col-sm-5 {
+	height: 50px;
+	margin-top: 20px;
+} */
 .wrapper_mypage{
     background: #d2f2ff;
     border-radius: 5px;
@@ -767,9 +781,9 @@ a:hover,a *:hover{
 @media screen and (max-width:1200px){
 	.logo{
 		width: 300px;
-		height: 44px;
+		height: 10px;
 		background-size: contain;
-		margin-top: 20px;
+		margin-top: 50px;
 	}
 }
 @media screen and (max-width:400px){
@@ -1002,6 +1016,7 @@ background-image:url(img/top_search_detail.png);
 .map__search-area {
 	background: #fff462;
 	box-shadow: 2px 2px 4px gray;
+	width: 350px;
 }
 button:hover {
 	background:gray;
@@ -1012,7 +1027,7 @@ button:hover {
 }
 .map__search-img {
 	box-sizing: border-box;
-	max-width: 500px;
+	max-width: 700px;
 	width: 100%;
 	height: auto;
 }
@@ -1034,6 +1049,7 @@ button:hover {
 .conditions__search-area {
 	background: #82cddd;
 	box-shadow: 2px 2px 4px gray;
+	width: 350px;
 }
 .conditions__search-area:hover {
 	background:#82cddd;
@@ -1042,7 +1058,7 @@ button:hover {
 }
 .conditions__search-img {
 	box-sizing: border-box;
-	max-width: 390px;
+	max-width: 700px;
 	width: 100%;
 	height: auto;
 }
